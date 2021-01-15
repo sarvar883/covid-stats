@@ -14,7 +14,6 @@ import History from './components/info/History';
 const App = () => {
   return (
     <Router>
-      {/* <Router basename={process.env.PUBLIC_URL}> */}
       <Navbar />
 
       <Switch>
