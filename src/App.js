@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  HashRouter as Router,
+  // BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
 
 import Navbar from './components/layout/Navbar';
 import NotFound from './components/help/NotFound';
@@ -8,7 +13,8 @@ import History from './components/info/History';
 
 const App = () => {
   return (
-    <Router>
+    // <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
 
       <Switch>
