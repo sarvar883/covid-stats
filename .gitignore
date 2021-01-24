@@ -9,6 +9,9 @@ node_modules/
 # testing
 /coverage
 
+# help
+/deploy.txt
+
 # production
 /build
 
